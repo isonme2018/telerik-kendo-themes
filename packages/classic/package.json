@@ -1,0 +1,42 @@
+{
+  "name": "@progress/kendo-theme-classic",
+  "description": "Sass port of less based themes for Kendo UI theme",
+  "version": "4.0.0",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Theme",
+    "Classic"
+  ],
+  "main": "dist/all.css",
+  "sass": "scss/all.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-themes.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "sass": "gulp sass",
+    "sass:watch": "gulp sass:watch",
+    "sass:swatches": "gulp sass:swatches",
+    "dart": "gulp dart",
+    "dart:watch": "gulp dart:watch",
+    "dart:swatches": "gulp dart:swatches",
+    "lint": "gulp lint",
+    "api": "gulp api",
+    "api-check": "gulp api:check",
+    "ci": "gulp ci",
+    "ci:full": "gulp ci:full",
+    "embed-assets": "gulp assets",
+    "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default' && gulp prepublish",
+    "postpublish": "rm -rf modules && git checkout scss"
+  },
+  "devDependencies": {
+    "@progress/kendo-theme-default": "^4.12.0",
+    "@progress/kendo-theme-tasks": "^0.4.3",
+    "gulp": "^4.0.2"
+  }
+}
