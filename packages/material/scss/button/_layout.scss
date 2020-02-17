@@ -10,8 +10,8 @@ $split-button-arrow-border-width: 1px;
 @include exports("button/layout/material") {
 
     .k-button {
-        text-transform: uppercase;
         font-weight: 500;
+        text-transform: uppercase;
         transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
 
         &::before {

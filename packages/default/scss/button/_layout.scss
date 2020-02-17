@@ -86,7 +86,8 @@
     }
 
 
-    //DropDown Button
+    // DropDown Button
+    .k-menu-button,
     .k-dropdown-button {
         &.k-state-focused,
         &:focus {
@@ -97,6 +98,22 @@
             border-radius: $border-radius;
             border-width: 0;
             display: inline-block;
+        }
+    }
+
+
+    // Split button
+    .k-split-button {
+
+        .k-button {
+            @include border-left-radius-only();
+        }
+
+        .k-select,
+        .k-split-button-arrow {
+            @include border-right-radius-only();
+            margin-left: -1px;
+            padding: $button-padding-y;
         }
     }
 

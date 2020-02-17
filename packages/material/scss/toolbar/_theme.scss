@@ -4,10 +4,12 @@
 
     .k-toolbar {
 
-        .k-dropdown-button:not(.k-primary),
+        // Common for all
+        .k-button:not(.k-primary),
+        .k-menu-button:not(.k-primary),
         .k-split-button:not(.k-primary),
-        .k-button:not(.k-primary) {
-            background-color: initial;
+        .k-dropdown-button:not(.k-primary) {
+            background-color: try-shade($toolbar-bg, 1);
         }
 
         .k-button.k-state-disabled,
@@ -17,29 +19,17 @@
             background-color: transparent !important; // sass-lint:disable-line no-important
         }
 
+
+        // Button
+        .k-button {}
+
+
+        // Menu button
+        .k-menu-button {}
+
+
         // Split button
         .k-split-button {
-            .k-icon {
-                opacity: $icon-opacity;
-            }
-
-            // States
-            &:hover {
-
-                &,
-                & .k-button {
-                    background: transparent;
-                }
-            }
-            &:hover,
-            &:focus,
-            &.k-state-border-up,
-            &.k-state-border-down {
-
-                .k-split-button-arrow {
-                    border-left-color: $button-border;
-                }
-            }
 
             // Hover state
             &:hover,
@@ -57,36 +47,6 @@
                 }
             }
 
-            // Expanded state
-            &.k-state-border-down,
-            &.k-state-border-up {
-                .k-button::before {
-                    opacity: 0;
-                }
-            }
-
-            // Disables state
-            &.k-state-disabled {
-                opacity: 1;
-
-                .k-split-button-arrow {
-                    border-left-color: transparent;
-                }
-
-                .k-button {
-                    @extend .k-button-flat;
-                    color: $button-disabled-text;
-                }
-
-                .k-button::before {
-                    opacity: 0;
-                }
-
-                &:focus .k-button::before,
-                &.k-state-focused .k-button::before {
-                    @include opacity( $flat-button-focused-opacity );
-                }
-            }
         }
 
         // Dropdowns and Inputs
@@ -106,14 +66,20 @@
 
         .k-dropdown,
         .k-combobox {
+
             .k-dropdown-wrap {
-                .k-select {
-                    opacity: $icon-opacity;
-                }
+                color: $button-text;
+                background-color: try-shade($toolbar-bg, 1);
+
 
                 // Hover
                 &:hover,
                 &.k-state-hover {
+
+                    &::before {
+                        @include opacity( $flat-button-hover-opacity );
+                    }
+
                     .k-select {
                         opacity: $icon-opacity;
                     }
@@ -122,10 +88,16 @@
                 // Focused
                 &.k-state-focused,
                 .k-state-focused > & {
+
+                    &::before {
+                        @include opacity( $flat-button-focused-opacity );
+                    }
+
                     .k-select {
                         opacity: $icon-opacity;
                     }
                 }
+
             }
         }
 

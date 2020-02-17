@@ -63,18 +63,8 @@
 
 
         // Button
-        .k-button {
-            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
-            line-height: $toolbar-button-line-height;
+        .k-button {}
 
-            &::before {
-                @include border-radius( $toolbar-button-border-radius );
-            }
-
-            .k-ie11 & {
-                display: inline-flex;
-            }
-        }
 
         // Toggle button
         .k-toggle-button {}
@@ -82,29 +72,11 @@
 
         // Button group
         .k-button-group {}
-        .k-button-group .k-button {
-            border-radius: 0;
-        }
-        .k-button-group .k-group-start,
-        .k-button-group .k-button:first-child {
-            @include border-radius( $toolbar-button-border-radius 0 0 $toolbar-button-border-radius );
-        }
-        .k-button-group .k-group-end,
-        .k-button-group .k-button:last-child {
-            @include border-radius( 0 $toolbar-button-border-radius $toolbar-button-border-radius 0 );
-        }
+
 
         // Split button
-        .k-split-button {
-            .k-button {
-                @include border-left-radius-only();
-            }
-            .k-button.k-split-button-arrow {
-                @include border-right-radius-only();
-                margin-left: -1px;
-                padding: $button-padding-x-sm;
-            }
-        }
+        .k-split-button {}
+
 
         // Dropdowns and Inputs
         // .k-autocomplete,
