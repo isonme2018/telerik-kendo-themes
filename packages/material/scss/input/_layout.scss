@@ -2,6 +2,13 @@
 
 @include exports("input/layout/material") {
 
+    // Textbox, Textarea
+    .k-textbox,
+    .k-textarea {
+        border-width: 0 0 $input-border-width;
+    }
+
+
     // Textarea Floating label
     .k-textarea-wrapper {
         padding-top: 0;

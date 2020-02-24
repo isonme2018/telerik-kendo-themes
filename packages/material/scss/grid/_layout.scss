@@ -123,11 +123,12 @@ $grid-group-drag-clue-opacity: .9 !default;
         width: 2px;
     }
 
+
+    // TODO: refactor grid forms
     .k-edit-cell,
     .k-grid-edit-row > td {
 
         > .k-textbox,
-        > .k-input.k-textbox,
         > .k-textarea,
         > .k-widget {
             border-radius: $text-field-radius;

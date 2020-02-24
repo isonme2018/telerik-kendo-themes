@@ -80,6 +80,7 @@
                 padding: $padding-y 0;
             }
 
+            // TODO: this selector needs improving
             > input:not(.k-checkbox):not(.k-radio),
             > textarea {
                 width: 100%;
@@ -381,13 +382,13 @@
     .k-maskedtextbox {
         &.form-control {
             .k-textbox {
-                height: calc( #{$bootstrap-integration-input-height} + #{$input-border-width * 2} );
+                height: calc( #{$bootstrap-integration-input-height} + #{$input-border-height} );
                 padding: $twbs-input-padding-y $twbs-input-padding-x;
             }
 
             &-sm {
                 .k-textbox {
-                    height: calc( #{$bootstrap-integration-input-height-sm} + #{$input-border-width + 2} );
+                    height: calc( #{$bootstrap-integration-input-height-sm} + #{$input-border-height} );
                     padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
                     line-height: $twbs-input-line-height-sm;
                 }
@@ -395,7 +396,7 @@
 
             &-lg {
                 .k-textbox {
-                    height: calc( #{$bootstrap-integration-input-height-lg} + #{$input-border-width * 2} );
+                    height: calc( #{$bootstrap-integration-input-height-lg} + #{$input-border-height} );
                     padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
                     line-height: $twbs-input-line-height-lg;
                 }
@@ -405,17 +406,17 @@
 
     .k-textbox {
         &.form-control {
-            height: calc( #{$bootstrap-integration-input-height} + #{$input-border-width * 2} );
+            height: calc( #{$bootstrap-integration-input-height} + #{$input-border-height} );
             padding: $twbs-input-padding-y $twbs-input-padding-x;
 
             &-sm {
-                height: calc( #{$bootstrap-integration-input-height-sm} + #{$input-border-width * 2} );
+                height: calc( #{$bootstrap-integration-input-height-sm} + #{$input-border-height} );
                 padding: $twbs-input-padding-y-sm $twbs-input-padding-x-sm;
                 line-height: $twbs-input-line-height-sm;
             }
 
             &-lg {
-                height: calc( #{$bootstrap-integration-input-height-lg} + #{$input-border-width * 2} );
+                height: calc( #{$bootstrap-integration-input-height-lg} + #{$input-border-height} );
                 padding: $twbs-input-padding-y-lg $twbs-input-padding-x-lg;
                 line-height: $twbs-input-line-height-lg;
             }

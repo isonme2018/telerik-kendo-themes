@@ -22,38 +22,34 @@
 
         .k-input {
             padding: $input-padding-y $input-padding-x;
+            width: 100%;
+            min-width: 0;
             height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
-            box-sizing: border-box;
             border: 0;
             outline: 0;
+            box-sizing: border-box;
             color: inherit;
             background: none;
             font: inherit;
             flex: 0 1 auto;
-            display: flex;
-            align-items: center;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
-        .k-i-close {
-            display: none;
-            align-self: center;
-        }
 
+        // Loading icon
         .k-i-loading {
             height: ($input-line-height * $input-font-size);
             line-height: ($input-line-height * $input-font-size);
             position: absolute;
             top: $input-padding-y;
             right: $input-icon-offset;
+        }
 
 
-            .k-rtl &,
-            [dir="rtl"] & {
-                right: auto;
-                left: $input-icon-offset;
-            }
+        // Clear value
+        ::-ms-clear {
+            display: none;
         }
 
         .k-clear-value {
@@ -70,18 +66,18 @@
             top: $input-padding-y;
             right: $input-icon-offset;
 
-
-            .k-rtl &,
-            [dir="rtl"] & {
-                right: auto;
-                left: $input-icon-offset;
-            }
-        }
-        .k-clear-value {
             &:hover {
                 opacity: 1;
             }
         }
+        &:hover,
+        &.k-state-hover,
+        &.k-state-focused {
+            .k-clear-value {
+                display: inline-flex;
+            }
+        }
+
 
         // Searchbar
         .k-searchbar {
@@ -90,39 +86,30 @@
             flex-direction: row;
         }
 
-        &:hover,
-        &.k-state-hover,
-        &.k-state-focused {
-            .k-i-close {
-                display: flex;
-                outline: 0;
-            }
+    }
 
-            .k-clear-value {
-                display: inline-flex;
-            }
+
+
+
+    // RTL
+    .k-rtl.k-autocomplete,
+    [dir="rtl"].k-autocomplete,
+    .k-rtl .k-autocomplete,
+    [dir="rtl"] .k-autocomplete {
+        padding-left: $picker-select-calc-size;
+        padding-right: 0;
+        text-align: right;
+
+        .k-select {
+            @include border-left-radius-only();
         }
 
-        &[dir="rtl"],
-        .k-rtl & {
-            padding-left: $picker-select-calc-size;
-            padding-right: 0;
-            text-align: right;
-
-            .k-select {
-                @include border-left-radius-only();
-            }
-
-            .k-clear-value,
-            .k-i-loading {
-                right: auto;
-                left: $input-icon-offset;
-            }
+        .k-clear-value,
+        .k-i-loading {
+            right: auto;
+            left: $input-icon-offset;
         }
 
-        ::-ms-clear {
-            display: none;
-        }
     }
 
 }
