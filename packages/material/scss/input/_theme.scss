@@ -1,27 +1,32 @@
 @include exports("input/theme") {
 
+    // Textbox, Textarea
     .k-textbox,
-    .k-textarea,
-    .k-input.k-textbox {
+    .k-textarea {
         @include fill(
-            $bg: transparent,
-            $border: $input-border
+            $input-text,
+            $input-bg,
+            $input-border
         );
-        border-width: 0 0 $input-border-width;
-        border-radius: 0;
-        @include box-shadow( none );
-        font-size: $font-size-lg;
 
         // Hovered
         &:hover,
         &.k-state-hover {
-            @include fill( $border: $input-hovered-border );
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
         // Focused
         &:focus,
         &.k-state-focus  {
-            @include fill( $border: $input-focused-border );
+            @include fill(
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
         }
 
         // Selection

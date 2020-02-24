@@ -1,9 +1,8 @@
 @include exports("input/theme") {
 
-    // Input, Textbox, Textarea
+    // Textbox, Textarea
     .k-textbox,
-    .k-textarea,
-    .k-input.k-textbox {
+    .k-textarea {
         @include fill(
             $input-text,
             $input-bg,
@@ -13,14 +12,20 @@
         // Hovered
         &:hover,
         &.k-state-hover {
-            @include fill ( $border: $input-hovered-border );
+            @include fill (
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
         // Focused
         &:focus,
         &.k-state-focused {
             @include fill (
-                $border: $input-focused-border,
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
             );
             @include box-shadow( $input-focused-shadow );
         }
