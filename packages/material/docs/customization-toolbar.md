@@ -45,14 +45,14 @@ The following table lists the available variables for customization.
     <tr>
       <td>$toolbar-padding-x</td>
       <td>
-          0
+          6px
       </td>
       <td>The horizontal padding of the container.</td>
     </tr>
     <tr>
       <td>$toolbar-padding-y</td>
       <td>
-          0
+          6px
       </td>
       <td>The vertical padding of the container.</td>
     </tr>
