@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "amd",
+        "rootDir": "./src",
+        "outFile": "./dist/index.js",
+        "lib": [
+            "es2015",
+            "es2017",
+            "dom"
+        ],
+        "declaration": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictNullChecks": true
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}
