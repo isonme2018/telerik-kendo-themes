@@ -2784,9 +2784,10 @@ $filemanager-text: $component-text !default;
 $filemanager-border: $component-border !default;
 
 $filemanager-toolbar-border-width: $filemanager-border-width !default;
-$filemanager-toolbar-bg: null !default;
+$filemanager-toolbar-bg: try-shade( $button-bg ) !default;
 $filemanager-toolbar-text: null !default;
 $filemanager-toolbar-border: null !default;
+$filemanager-toolbar-gradient: null !default;
 
 $filemanager-navigation-padding-x: $filemanager-spacer !default;
 $filemanager-navigation-padding-y: $filemanager-spacer !default;
@@ -2799,7 +2800,7 @@ $filemanager-navigation-border: null !default;
 $filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
 $filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
 $filemanager-breadcrumb-border-width: $filemanager-border-width !default;
-$filemanager-breadcrumb-bg: $toolbar-bg !default;
+$filemanager-breadcrumb-bg: $filemanager-toolbar-bg !default;
 $filemanager-breadcrumb-text: null !default;
 $filemanager-breadcrumb-border: null !default;
 
@@ -2913,6 +2914,16 @@ $scheduler-bg: $panel-bg !default;
 $scheduler-text: $panel-text !default;
 $scheduler-border: $panel-border !default;
 
+$scheduler-toolbar-bg: try-shade( $button-bg ) !default;
+$scheduler-toolbar-text: null !default;
+$scheduler-toolbar-border: null !default;
+$scheduler-toolbar-gradient: null !default;
+
+$scheduler-footer-bg: null !default;
+$scheduler-footer-text: null !default;
+$scheduler-footer-border: null !default;
+$scheduler-footer-gradient: null !default;
+
 $scheduler-event-min-height: 25px !default;
 $scheduler-event-border-radius: $border-radius !default;
 $scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
@@ -2976,6 +2987,9 @@ $chat-message-box-padding-y: 10px !default;
 $chat-toolbar-padding-x: $chat-padding-x !default;
 $chat-toolbar-padding-y: 10px !default;
 $chat-toolbar-spacing: 20px !default;
+$chat-toolbar-bg: try-shade( $button-bg ) !default;
+$chat-toolbar-text: $toolbar-text !default;
+$chat-toolbar-border: inherit !default;
 
 $chat-quick-reply-padding-x: 12px !default;
 $chat-quick-reply-padding-y: 8px !default;
@@ -3015,10 +3029,6 @@ $chat-message-box-border: inherit !default;
 $chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
 
 $chat-message-box-button-hover-text: $primary !default;
-
-$chat-toolbar-box-bg: $toolbar-bg !default;
-$chat-toolbar-box-text: $toolbar-text !default;
-$chat-toolbar-box-border: inherit !default;
 
 $chat-toolbar-box-button-hover-text: $primary !default;
 $chat-toolbar-box-button-hover-bg: none !default;
@@ -3122,6 +3132,11 @@ $pdf-viewer-line-height: $line-height !default;
 $pdf-viewer-bg: $component-bg !default;
 $pdf-viewer-text: $component-text !default;
 $pdf-viewer-border: $component-border !default;
+
+$pdf-viewer-toolbar-bg: try-shade( $button-bg ) !default;
+$pdf-viewer-toolbar-text: null !default;
+$pdf-viewer-toolbar-border: null !default;
+$pdf-viewer-toolbar-gradient: null !default;
 
 $pdf-viewer-canvas-bg: $app-bg !default;
 $pdf-viewer-canvas-text: null !default;

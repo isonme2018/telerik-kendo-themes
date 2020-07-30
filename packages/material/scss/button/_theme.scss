@@ -73,6 +73,12 @@
     .k-button-outline,
     .k-button.k-outline {
         @include box-shadow( none );
+        background-color: transparent;
+
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
     }
     .k-button-outline-primary,
     .k-button-outline.k-primary,
