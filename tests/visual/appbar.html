@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Appbar</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(1, 1fr);
+            background-color: #F3F5F7;
+        }
+        .title {
+            font-size: 19px;
+            margin: 0;
+        }
+        .k-icon {
+            width: 30px;
+            text-align: center;
+        }
+        .vl {
+            border-left: 1px solid;
+            height: 500px;
+        }
+        ul {
+            font-size: 12px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area" class="grid">
+        <section>
+            <h4>Appbar Basic (inherit background)</h4>
+            <div style="background: #1976d2; color: #fff">
+                <div class="k-appbar k-appbar-top k-appbar-inherit">
+                    <div class="k-appbar-section">
+                        <span class="k-icon k-i-menu"></span>
+                    </div>
+                    <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+                    <div class="k-appbar-section">
+                        <h1 class="title">Page Title</h1>
+                    </div>
+                    <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 40px;"></span>
+                    <div class="k-appbar-section">
+                        <ul>
+                            <li>Menu Item</li>
+                            <li>Menu Item</li>
+                            <li>Menu Item</li>
+                        </ul>
+                    </div>
+
+                    <span class="k-appbar-spacer"></span>
+
+                    <div class="k-appbar-section">
+                        <input class="k-textbox" placeholder="Search">
+                    </div>
+
+                    <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                    <div class="k-appbar-section">
+                        <span class="k-icon k-i-saturation"></span>
+                    </div>
+
+                    <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                    <div class="k-appbar-section">
+                        <span class="k-icon k-i-bell"></span>
+                    </div>
+
+                    <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                    <div class="k-appbar-section">
+                        <span class="vl"></span>
+                    </div>
+
+                    <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                    <div class="k-appbar-section">
+                        <span class="k-icon k-i-user"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h4>Appbar Light</h4>
+            <div class="k-appbar k-appbar-top k-appbar-light">
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-menu"></span>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+                <div class="k-appbar-section">
+                    <h1 class="title">Page Title</h1>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 40px;"></span>
+                <div class="k-appbar-section">
+                    <ul>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                    </ul>
+                </div>
+
+                <span class="k-appbar-spacer"></span>
+
+                <div class="k-appbar-section">
+                   <input class="k-textbox" placeholder="Search">
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-saturation"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-bell"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="vl"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-user"></span>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h4>Dark Appbar</h4>
+            <div class="k-appbar k-appbar-top k-appbar-dark">
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-menu"></span>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+                <div class="k-appbar-section">
+                    <h1 class="title">Page Title</h1>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 40px;"></span>
+                <div class="k-appbar-section">
+                    <ul>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                    </ul>
+                </div>
+
+                <span class="k-appbar-spacer"></span>
+
+                <div class="k-appbar-section">
+                   <input class="k-textbox" placeholder="Search">
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-saturation"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-bell"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="vl"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-user"></span>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h4>Sticky AppBar</h4>
+            <div class="k-appbar k-appbar-top k-appbar-light k-appbar-sticky">
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-menu"></span>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+                <div class="k-appbar-section">
+                    <h1 class="title">Page Title</h1>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 40px;"></span>
+                <div class="k-appbar-section">
+                    <ul>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                    </ul>
+                </div>
+
+                <span class="k-appbar-spacer"></span>
+
+                <div class="k-appbar-section">
+                   <input class="k-textbox" placeholder="Search">
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-saturation"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-bell"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="vl"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-user"></span>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="width: 768px">
+            <h4>Responsive AppBar</h4>
+            <div class="k-appbar k-appbar-top k-appbar-light">
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-menu"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+
+                <div class="k-appbar-section">
+                    <h1 class="title">Page Title</h1>
+                </div>
+
+                <span class="k-appbar-spacer"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-widget k-dropdown" style="width: 100%">
+                        <span class="k-dropdown-wrap">
+                            <span class="k-input">Menu item</span>
+                            <span class="k-select">
+                                <span class="k-icon k-i-arrow-60-down"></span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-search"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-saturation"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-bell"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="vl"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-user"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h4>RTL AppBar</h4>
+            <div class="k-appbar k-appbar-top k-appbar-light k-trl" dir="rtl">
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-menu"></span>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 16px;"></span>
+                <div class="k-appbar-section">
+                    <h1 class="title">Page Title</h1>
+                </div>
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 40px;"></span>
+                <div class="k-appbar-section">
+                    <ul>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                        <li>Menu Item</li>
+                    </ul>
+                </div>
+
+                <span class="k-appbar-spacer"></span>
+
+                <div class="k-appbar-section">
+                    <input class="k-textbox" placeholder="Search">
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-saturation"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-bell"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="vl"></span>
+                </div>
+
+                <span class="k-appbar-spacer k-appbar-spacer-sized" style="width: 8px;"></span>
+
+                <div class="k-appbar-section">
+                    <span class="k-icon k-i-user"></span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

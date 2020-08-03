@@ -1,0 +1,29 @@
+@include exports("appbar/theme") {
+
+    .k-appbar {
+        @include fill (
+            $appbar-text,
+            $appbar-bg,
+            $appbar-border,
+        );
+
+        @include box-shadow($appbar-box-shadow);
+
+        &.k-appbar-light {
+            @include fill (
+                $appbar-light-text,
+                $appbar-light-bg,
+                $appbar-light-border,
+            );
+        }
+
+        &.k-appbar-dark {
+            @include fill (
+                $appbar-dark-text,
+                $appbar-dark-bg,
+                $appbar-dark-border,
+            );
+        }
+    }
+
+}

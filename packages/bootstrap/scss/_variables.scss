@@ -1751,6 +1751,33 @@ $actions-gradient: null !default;
 
 $actions-stretched-border: $base-border !default;
 
+
+// Appbar
+$appbar-margin-y: null !default;
+$appbar-margin-x: null !default;
+$appbar-padding-y: 8px !default;
+$appbar-padding-x: 16px !default;
+$appbar-border-width: 0px !default;
+
+$appbar-font-size: $font-size !default;
+$appbar-line-height: $line-height !default;
+$appbar-font-family: $font-family !default;
+
+$appbar-bg: null !default;
+$appbar-text: null !default;
+$appbar-border: null !default;
+
+$appbar-light-bg: $bg-color !default;
+$appbar-light-text: $text-color !default;
+$appbar-light-border: null !default;
+
+$appbar-dark-bg: $text-color !default;
+$appbar-dark-text: $bg-color !default;
+$appbar-dark-border: null !default;
+
+$appbar-box-shadow: 0px 1px 1px rgba(0, 0, 0, .16);
+
+
 // Toolbar
 
 $toolbar-text: $header-text !default;
