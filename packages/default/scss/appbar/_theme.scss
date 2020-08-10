@@ -24,6 +24,10 @@
                 $appbar-dark-border,
             );
         }
+
+        &.k-appbar-bottom {
+            @include box-shadow($appbar-bottom-box-shadow);
+        }
     }
 
 }
