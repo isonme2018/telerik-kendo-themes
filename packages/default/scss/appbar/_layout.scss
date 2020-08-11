@@ -56,5 +56,13 @@
         .k-appbar-spacer-sized {
             flex-grow: 0;
         }
+
+        // Separator
+        .k-appbar-separator {
+            margin: 0;
+            border-style: solid;
+            width: 0;
+            border-width: 0 0 0 1px;
+        }
     }
 }
