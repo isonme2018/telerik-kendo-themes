@@ -6,7 +6,6 @@
             $appbar-bg,
             $appbar-border,
         );
-
         @include box-shadow($appbar-box-shadow);
 
         &.k-appbar-light {
