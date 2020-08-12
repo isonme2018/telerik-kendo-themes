@@ -25,7 +25,7 @@
 
 
         .k-textarea .k-input {
-            padding-top: calc( #{$textarea-padding-y} + 14px );
+            padding-top: calc( #{$textarea-padding-y} + #{$textarea-line-height-em} );
         }
 
         .k-label {
@@ -55,7 +55,13 @@
         > .k-label {
             left: initial;
             right: $textarea-padding-x;
-            transform-origin: top right;
+        }
+
+        &:not(.k-state-empty),
+        &.k-state-focused {
+            > .k-label {
+                transform-origin: top right;
+            }
         }
     }
 }
@@ -64,7 +70,7 @@
 
     // Textarea Floating label Angular rendering
     .k-textbox-container.k-textarea-wrapper,
-    .k-floating-label-container.k-textarea-container {
+    .k-floating-label-container.k-textarea-wrapper {
         padding-top: 0;
 
         .k-textarea {
