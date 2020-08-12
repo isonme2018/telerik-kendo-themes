@@ -1806,25 +1806,14 @@ $actions-stretched-border: $base-border !default;
 // Appbar
 $appbar-margin-y: null !default;
 $appbar-margin-x: null !default;
-$appbar-padding-y: 8px !default;
-$appbar-padding-x: 24px !default;
+$appbar-padding-y: map-get( $spacing, 2 ) !default;
+$appbar-padding-x: map-get( $spacing, 6 ) !default;
 $appbar-border-width: 0px !default;
 
 $appbar-font-size: $font-size !default;
 $appbar-line-height: $line-height !default;
 $appbar-font-family: $font-family !default;
-
-$appbar-bg: null !default;
-$appbar-text: null !default;
-$appbar-border: null !default;
-
-$appbar-light-bg: $bg-color !default;
-$appbar-light-text: $text-color !default;
-$appbar-light-border: null !default;
-
-$appbar-dark-bg: $text-color !default;
-$appbar-dark-text: $bg-color !default;
-$appbar-dark-border: null !default;
+$appbar-gap: map-get( $spacing, 2 ) !default;
 
 $appbar-box-shadow: 0px 2px 3px rgba(0, 0, 0, .24);
 $appbar-bottom-box-shadow:  0px -2px 3px rgba(0, 0, 0, .24);

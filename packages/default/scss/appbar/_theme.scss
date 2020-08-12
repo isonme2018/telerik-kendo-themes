@@ -1,32 +1,19 @@
 @include exports("appbar/theme") {
 
     .k-appbar {
-        @include fill (
-            $appbar-text,
-            $appbar-bg,
-            $appbar-border,
-        );
         @include box-shadow($appbar-box-shadow);
-
-        &.k-appbar-light {
-            @include fill (
-                $appbar-light-text,
-                $appbar-light-bg,
-                $appbar-light-border,
-            );
-        }
-
-        &.k-appbar-dark {
-            @include fill (
-                $appbar-dark-text,
-                $appbar-dark-bg,
-                $appbar-dark-border,
-            );
-        }
 
         &.k-appbar-bottom {
             @include box-shadow($appbar-bottom-box-shadow);
         }
     }
 
+    // AppBar theme colors
+    @each $name, $color in $theme-colors {
+        .k-appbar-#{$name} {
+            border-color: $color;
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
+    }
 }
