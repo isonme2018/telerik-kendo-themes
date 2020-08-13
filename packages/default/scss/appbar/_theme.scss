@@ -1,4 +1,9 @@
 @include exports("appbar/theme") {
+    $appbar-light-bg: $bg-color !default;
+    $appbar-light-text: $text-color !default;
+
+    $appbar-dark-bg: $text-color !default;
+    $appbar-dark-text: $bg-color !default;
 
     .k-appbar {
         @include box-shadow($appbar-box-shadow);
@@ -11,9 +16,16 @@
     // AppBar theme colors
     @each $name, $color in $theme-colors {
         .k-appbar-#{$name} {
-            border-color: $color;
-            color: contrast-wcag( $color );
-            background-color: $color;
+            @if $name == "light" {
+                color: $appbar-light-text;
+                background-color: $appbar-light-bg;
+            } @else if $name == "dark" {
+                color: $appbar-dark-text;
+                background-color: $appbar-dark-bg;
+            } @else {
+                color: contrast-wcag( $color );
+                background-color: $color;
+            }
         }
     }
 }

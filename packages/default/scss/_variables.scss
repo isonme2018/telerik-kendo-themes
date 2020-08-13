@@ -194,7 +194,7 @@ $dark: #404040 !default;
 /// @type Color
 $light: #ebebeb !default;
 
-/// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
+/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
 $inverse: if( $is-dark-theme, $light, $dark ) !default;
 

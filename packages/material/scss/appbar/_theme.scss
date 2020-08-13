@@ -1,1 +1,8 @@
+$appbar-light-bg: #ffffff !default;
+$appbar-light-text: #000000 !default;
+
+$appbar-dark-bg: #121212 !default;
+$appbar-dark-text: rgba(#ffffff, .87) !default;
+
 @import "~@progress/kendo-theme-default/scss/appbar/_theme.scss";
+
