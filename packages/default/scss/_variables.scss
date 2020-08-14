@@ -475,6 +475,40 @@ $badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size
 $badge-dot-size-lg: 12px;
 
 
+// Loader
+$loader-dot-border-radius: 50% !default;
+$loader-dot-size-sm: 6px !default;
+$loader-dot-size-md: 10px !default;
+$loader-dot-size-lg: 20px !default;
+
+$loader-option-a-dot-margin-x-sm: 1.5px !default;
+$loader-option-a-dot-margin-x-md: 2.5px !default;
+$loader-option-a-dot-margin-x-lg: 5px !default;
+
+$loader-option-b-width-sm: $loader-dot-size-sm * 4 !default;
+$loader-option-b-height-sm: 20px !default;
+$loader-option-b-width-md: $loader-dot-size-md * 4 !default;
+$loader-option-b-height-md: 34px !default;
+$loader-option-b-width-lg: $loader-dot-size-lg * 4 !default;
+$loader-option-b-height-lg: 65px !default;
+
+$loader-option-c-width-sm: $loader-dot-size-sm * 7 !default;
+$loader-option-c-height-sm: ($loader-dot-size-sm * 2) + ($loader-dot-size-sm / 2) !default;
+$loader-option-c-width-md: $loader-dot-size-md * 7 !default;
+$loader-option-c-height-md: ($loader-dot-size-md * 2) + ($loader-dot-size-md / 2) !default;
+$loader-option-c-width-lg: $loader-dot-size-lg * 7 !default;
+$loader-option-c-height-lg: ($loader-dot-size-lg * 2) + ($loader-dot-size-lg / 2) !default;
+
+$loader-option-d-width-sm: $loader-dot-size-sm * 4 !default;
+$loader-option-d-height-sm: $loader-option-d-width-sm !default;
+$loader-option-d-width-md: $loader-dot-size-md * 4 !default;
+$loader-option-d-height-md: $loader-option-d-width-md !default;
+$loader-option-d-width-lg: $loader-dot-size-lg * 4 !default;
+$loader-option-d-height-lg: $loader-option-d-width-lg !default;
+
+$loader-secondary-bg: #656565 !default;
+
+
 // Chip
 $chips-margin: 8px !default;
 
