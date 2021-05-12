@@ -41,7 +41,7 @@
     "gulplog": "^1.0.0",
     "minimist": "^1.2.5",
     "plugin-error": "^1.0.1",
-    "postcss": "^7.0.32",
+    "postcss": "^8.2.10",
     "postcss-calc": "^7.0.2"
   }
 }
