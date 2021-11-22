@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
+    "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/core": "^9.0.1",
     "@joneff/baka": "^0.5.1",
     "ansi-colors": "^4.1.1",
